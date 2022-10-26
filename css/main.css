@@ -1,0 +1,511 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #FF7B00;
+  --bg-light: #F2F3FA
+}
+
+.primary-color {
+  color: var(--primary)
+}
+
+
+
+/* ************************ Start Utilites ************************ */
+.primary-button {
+  background-color: var(--primary);
+  /* padding: 0rem 1rem; */
+  border: none;
+  font-size: 0.875rem;
+  height: 40px;
+  width: 150px;
+  font-size: 1.1rem;
+  color: #fff
+}
+
+.primary-button:hover {
+  background-color: #D96900;
+}
+
+
+.title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.sub-title {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+}
+
+.orange-link {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0
+}
+
+.secondary-btn {
+  padding: .7rem 1rem;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.secondary-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.icon-container {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+
+  background-color: var(--primary)
+}
+
+
+/* ************************ End Utilites ************************ */
+
+/* ************************ start Nav ************************ */
+
+.top-nav {
+  position: relative;
+  z-index: 9999;
+}
+
+.top-nav a {
+  text-decoration: none;
+}
+
+.top-nav a {
+  opacity: 65%;
+}
+
+.top-nav a:hover {
+  opacity: 100%;
+}
+
+.navbar {
+  height: 77px;
+  background-color: #fff;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  z-index: 999999;
+}
+
+.toggle-nav {
+  top: 0;
+  transition: all .1s;
+}
+
+
+@media (max-width: 992px) {
+  .navbar {
+    top: 0px;
+  }
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-item .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+.navbar .primary-button span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+@media (max-width: 992px) {
+  .navbar .primary-button {
+    display: none;
+  }
+
+}
+
+/* ************************ End Nav *************************/
+/* ************************ Start Header ************************ */
+
+@media (max-width: 480px) {
+  .header-caption h1 {
+    font-size: 2.5rem
+  }
+
+  .header-caption p {
+    font-size: 1rem
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+  .header-caption h1 {
+    font-size: 3rem
+  }
+
+  .header-caption p {
+    font-size: 1.1rem
+  }
+}
+
+
+@media (min-width: 720px) and (max-width: 1280px) {
+  .header-caption h1 {
+    font-size: 4rem
+  }
+
+  .header-caption p {
+    font-size: 1.3rem
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .header-caption h1 {
+    font-size: 6rem
+  }
+
+  .header-caption p {
+    font-size: 1.5rem
+  }
+}
+
+
+
+.carousel-caption p,
+h1,
+h2,
+h3,
+h5,
+h4,
+h6,
+p {
+
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.carousel-caption a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  padding: .7rem 1.4rem !important;
+
+}
+
+.carousel {
+  position: relative;
+  min-height: 350px;
+}
+
+.header-caption {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  z-index: 99;
+}
+
+.carousel .primary-button {
+  height: 3.2rem;
+  width: 9rem;
+}
+
+.carousel .primary-button:last-child {
+  background-color: #F3F7FD;
+  color: #000;
+  margin-left: 1rem
+}
+
+.carousel h1 {
+  font-weight: bold;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.fa-greater-than,
+.fa-less-than {
+  font-size: 1.5rem !important;
+  background-color: #fff;
+  padding: 1.5rem
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+/* End Header */
+/* Start section 1  */
+
+p.lead {
+  color: rgb(87, 90, 123);
+}
+
+.help-sec .list p {
+  margin-left: 1rem;
+}
+
+.help-sec button {
+  height: 50px;
+  width: 170px;
+}
+
+.help-sec button span {
+  margin-right: 1rem
+}
+
+.help-sec img {
+  width: 49%;
+}
+
+/* End section 1  */
+/* Start Section 2  */
+
+.features {
+  background-color: var(--bg-light)
+}
+
+/* End Section 2  */
+/* Start Section 3 */
+
+.project-details {
+  position: absolute;
+  background: #fff;
+  bottom: 5%;
+  width: 90%;
+  padding: 1rem
+}
+
+/* End Section 3 */
+
+/* Start Section 4 */
+.work2-sec {
+  background-color: var(--bg-light)
+}
+
+.work2-sec .card {
+  border-color: opacity(50%);
+  height: 25rem;
+  width: 99%
+}
+
+.work2-sec .card .number {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: var(--primary)
+}
+
+
+.work2-sec .card .lead {
+  font-size: 1.1rem;
+}
+
+
+
+
+/* ************************ End Section 4 ************************ */
+
+/* ************************ Start Section 5 ************************ */
+
+.video {
+  height: 60vh;
+  background-image: url("/assests/imgs/bg-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.video .caption {
+  position: relative;
+  z-index: 99;
+}
+
+.video .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+
+}
+
+.video .icon:hover {
+  background-color: var(--bg-light);
+
+}
+
+/* ************************ End Section 5 ************************ */
+
+/* ************************ Start section 6 ************************ */
+
+.services-sec .card-body .card-title {
+  font-size: 1.4rem;
+}
+
+.services-sec .card-body .card-text {
+  font-size: 1.2rem;
+}
+
+.services-sec .icon-container {
+  position: absolute;
+  top: 38%;
+  left: 38%;
+}
+
+/* End Section 6 */
+
+/* Start Section 7 */
+.Construction-sec {
+  background-color: var(--primary);
+
+}
+
+
+.Construction-sec .col-lg-6:first-child {
+  padding: 7rem 0rem 7rem 7rem;
+}
+
+.Construction-sec .list {
+  font-size: 1.2rem
+}
+
+.Construction-sec button {
+  border: 1px solid#fff;
+}
+
+/* End Section 7 */
+
+/* Start Section 9 */
+
+section.employee {
+  height: 50vh;
+  background-image: url("/assests/imgs/bg-3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* ************************ End Section 9 ************************ */
+/* ************************ Start Clients ************************ */
+
+.clients-card {
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 2rem
+}
+
+
+.clients-card img {
+  width: 120px;
+  object-fit: cover;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* ************************ End Clients ************************ */
+
+
+/* ************************ Start Blogs ************************ */
+
+.blogs {
+  background-color: var(--bg-light);
+}
+
+.blog-card {
+  background-color: #fff;
+  width: 90%;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  z-index: 999;
+}
+
+/* ************************ End Blogs ************************ */
+
+/* ************************ Start Footer ************************ */
+
+.card-container {
+  margin-bottom: 10rem
+}
+
+footer.video {
+  height: 15vh;
+  background: url("/assests/imgs/bg-2.jpg") center center no-repeat cover;
+
+}
+
+footer .overlay {
+  background-color: var(--primary);
+  opacity: .7;
+}
+
+footer .row {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+
+footer input {
+  padding: .7rem !important;
+  margin-right: 1rem;
+  border-radius: none !important;
+  ;
+}
+
+footer input:focus,
+footer input:active {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.footer {
+  background-color: #000
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
+
+.footer-icon {
+  background-color: var(--primary);
+  padding: .5rem;
+  border-radius: 50%;
+  margin-right: 1rem
+}
+
+.footer-icon:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.brands span {
+  color: var(--primary)
+}
+
+/* ************************ End Footer ************************ */
